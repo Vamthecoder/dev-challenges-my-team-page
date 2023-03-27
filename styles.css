@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+  
+}
+
+header {
+    margin-top: 50px;
+}
+
+#left {
+    text-align: center;
+    font-size: 30px;
+}
+
+#right {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.grid-area {
+    display: grid;
+    
+    gap: 100px;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+/* .container:nth-child(1) {
+    border: 2px solid red ;
+    grid-area: one;
+}
+
+.container:nth-child(2) {
+    border: 2px solid blue;
+    grid-area: two;
+}
+
+.container:nth-child(3) {
+    grid-area: three;
+    border: 2px solid green;
+}
+
+.container:nth-child(4) {
+    grid-area: four;
+    border: 2px solid brown;
+}
+
+.container:nth-child(5) {
+    grid-area: five;
+    border: 2px solid pink;
+}
+
+.container:nth-child(6) {
+    grid-area: six;
+    border: 2px solid yellow;
+} */
+
+.image {
+    width: 300px;
+    height: 400px;
+
+    min-width: 300px;
+}
+
+.push {
+    margin-top: 40px;
+}
+
+.container {
+    position: relative;
+    width: 350px;
+} 
+
+.down {
+    font-size: large;
+    font-weight: bold;
+}
+
+.side {
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.side.one {
+    top: 50px;
+    right: -40px;
+    grid-area: one;
+} 
+
+.side.two {
+    top: 80px;
+    right: -30px;
+    
+}
+
+.side.three {
+    top: 25px;
+    right: -15px;
+}
+
+.side.four {
+    top: 35px;
+    right: -23px;
+}
+
+.side.five {
+    top: 66px;
+    right: -18px;
+}
+
+.side.six {
+    top: 28px;
+    right: -18px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 200px;
+    color: #0009
+}
+
+footer span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0009;
+}
+
+.grid-down2 {
+   
+    align-self: stretch;
+}
+
+@media only screen and (min-width: 600px ) {
+        header {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .grid-area {
+            grid-template-areas: 
+            'one two three'
+            'four five six';
+        }
+}
+
+@media only screen and (max-width: 599px) {
+    .grid-area {
+        grid-template-areas: 
+        'one two'
+        'three four'
+        'five six';
+        gap: 20px;
+        
+    }
+
+    .image {
+        width: 180px;
+        height: 250px;
+        min-width: 100px;
+    }
+
+    .container {
+        width: 250px;
+        
+        text-align: center;
+    }
+
+    .side.one {
+        top: 50px;
+        right: -47px;
+        grid-area: one;
+
+    } 
+    
+    .side.two {
+        top: 80px;
+        right: -35px;
+        
+    }
+    
+    .side.three {
+        top: 25px;
+        right: -22px;
+    }
+    
+    .side.four {
+        top: 35px;
+        right: -30px;
+    
+    }
+    
+    .side.five {
+        top: 66px;
+        right: -25px;
+    }
+    
+    .side.six {
+        top: 28px;
+        right: -25px;
+    }
+
+    .grid-down1 {
+        margin-top: -10px;
+    }
+    
+    .grid-down4 {
+        margin-top: 50px;
+    }
+
+    .grid-down5 {
+        margin-top: -40px;
+    }
+
+    .grid-down6 {
+        margin-top: 40px;
+    }
+}

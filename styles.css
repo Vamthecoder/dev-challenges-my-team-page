@@ -142,7 +142,7 @@ footer a {
     align-self: stretch;
 }
 
-@media only screen and (min-width: 600px ) {
+@media only screen and (min-width: 850px ) {
         header {
             display: grid;
             grid-template-columns: 50% 50%;
@@ -155,60 +155,104 @@ footer a {
         }
 }
 
+@media screen and (max-width: 840px) {
+    header {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-left: 10px;
+    }
+
+    #right {
+        grid-template-columns: 60% 20%;
+    }
+
+    .image {
+      min-width: 100px;
+      width: 150px;
+      height: 200px;
+    }
+
+    .container {
+        width: 200px;
+    }
+
+    .grid-area {
+        grid-template-areas: 
+        'one two three'
+        'four five six';
+        gap: 20px;
+        justify-content: center;
+    }
+
+
+    
+}
+
 @media only screen and (max-width: 599px) {
     .grid-area {
         grid-template-areas: 
         'one two'
         'three four'
         'five six';
-        gap: 20px;
-        
+        gap: 5px;   
+    }
+
+    body {
+        width: 90%;
+    }
+
+    #left {
+        text-align: left;
+    }
+
+    #right {
+        grid-template-columns: 100% 0%;
     }
 
     .image {
-        width: 180px;
-        height: 250px;
+        width: 150px;
+        height: 200px;
         min-width: 100px;
     }
 
     .container {
-        width: 250px;
+        width: 175px;
         
         text-align: center;
     }
 
     .side.one {
         top: 50px;
-        right: -47px;
+        right: -67px;
         grid-area: one;
 
     } 
     
     .side.two {
         top: 80px;
-        right: -35px;
+        right: -55px;
         
     }
     
     .side.three {
         top: 25px;
-        right: -22px;
+        right: -42px;
     }
     
     .side.four {
         top: 35px;
-        right: -30px;
+        right: -50px;
     
     }
     
     .side.five {
         top: 66px;
-        right: -25px;
+        right: -45px;
     }
     
     .side.six {
         top: 28px;
-        right: -25px;
+        right: -45px;
     }
 
     .grid-down1 {

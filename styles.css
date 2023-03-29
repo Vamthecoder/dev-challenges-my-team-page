@@ -5,7 +5,6 @@
 body {
     width: 80%;
     margin: auto;
-  
 }
 
 header {
@@ -26,47 +25,14 @@ header {
 
 .grid-area {
     display: grid;
-    
     gap: 100px;
     justify-content: center;
     margin-top: 50px;
-    
 }
-
-/* .container:nth-child(1) {
-    border: 2px solid red ;
-    grid-area: one;
-}
-
-.container:nth-child(2) {
-    border: 2px solid blue;
-    grid-area: two;
-}
-
-.container:nth-child(3) {
-    grid-area: three;
-    border: 2px solid green;
-}
-
-.container:nth-child(4) {
-    grid-area: four;
-    border: 2px solid brown;
-}
-
-.container:nth-child(5) {
-    grid-area: five;
-    border: 2px solid pink;
-}
-
-.container:nth-child(6) {
-    grid-area: six;
-    border: 2px solid yellow;
-} */
 
 .image {
     width: 300px;
     height: 400px;
-
     min-width: 300px;
 }
 
@@ -98,7 +64,6 @@ header {
 .side.two {
     top: 80px;
     right: -30px;
-    
 }
 
 .side.three {
@@ -138,17 +103,17 @@ footer a {
 }
 
 .grid-down2 {
-   
     align-self: stretch;
 }
 
 @media only screen and (min-width: 850px ) {
-        header {
+        
+    header {
             display: grid;
             grid-template-columns: 50% 50%;
         }
 
-        .grid-area {
+    .grid-area {
             grid-template-areas: 
             'one two three'
             'four five six';
@@ -156,6 +121,7 @@ footer a {
 }
 
 @media screen and (max-width: 840px) {
+    
     header {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -188,7 +154,8 @@ footer a {
     
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 450px) {
+    
     .grid-area {
         grid-template-areas: 
         'one two'
@@ -216,8 +183,7 @@ footer a {
     }
 
     .container {
-        width: 175px;
-        
+        width: 175px;   
         text-align: center;
     }
 
@@ -231,7 +197,6 @@ footer a {
     .side.two {
         top: 80px;
         right: -55px;
-        
     }
     
     .side.three {
@@ -242,7 +207,6 @@ footer a {
     .side.four {
         top: 35px;
         right: -50px;
-    
     }
     
     .side.five {

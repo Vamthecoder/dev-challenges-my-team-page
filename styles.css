@@ -194,12 +194,19 @@ footer a {
         'one two'
         'three four'
         'five six';
-        
-        
+        gap: 5px;   
+    }
+
+    body {
+        width: 90%;
+    }
+
+    #left {
+        text-align: left;
     }
 
     #right {
-        grid-template-columns: 95% 5%;
+        grid-template-columns: 100% 0%;
     }
 
     .image {

@@ -25,15 +25,13 @@ header {
 
 .grid-area {
     display: grid;
-    gap: 100px;
+    gap: 5em;
     justify-content: center;
     margin-top: 50px;
 }
 
 .image {
-    width: 300px;
-    height: 400px;
-    min-width: 300px;
+    width: 85%;
 }
 
 .push {
@@ -134,7 +132,7 @@ footer a {
 
     .image {
       min-width: 100px;
-      width: 150px;
+      max-width: 150px;
       height: 200px;
     }
 
@@ -161,24 +159,34 @@ footer a {
         'one two'
         'three four'
         'five six';
-        gap: 5px;   
+        gap: 4.5vw;   
     }
 
     body {
         width: 90%;
     }
 
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
     #left {
+        font-size: 21px;
         text-align: left;
     }
 
     #right {
-        grid-template-columns: 100% 0%;
+        grid-template-columns: 100%;
+        padding-left: 0;
+    }
+
+    #right p {
+        margin-top: -10px;
     }
 
     .image {
-        width: 150px;
-        height: 200px;
+        max-width: 200px;
         min-width: 100px;
     }
 
@@ -234,4 +242,14 @@ footer a {
     .grid-down6 {
         margin-top: 40px;
     }
+}
+
+@media screen and (max-width: 380px) {
+    .grid-area {
+        gap: 1vw
+    }
+    .image {
+       width: 80%;  
+    }
+
 }
